@@ -58,7 +58,6 @@ export class ColorPaletteComponent implements OnInit {
     this.context.restore();
 
     for (let j = 0; j < this.gridNumberAbscisse; j = j + 1) {
-      console.log(j);
       this.context.beginPath();
       this.context.moveTo(0, 0);
       this.context.lineTo(this.height, 0);
