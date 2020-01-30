@@ -1,0 +1,18 @@
+<div style="float: left;">
+  <input
+    type="text"
+    [(ngModel)]="topLeftColor"
+    id="topLeftColor"
+    name="top-left-color"
+    size="10"
+  />
+  <input
+    type="text"
+    [(ngModel)]="bottomRightColor"
+    id=" bottomRightColor"
+    name=" bottom-right-color"
+    size="10"
+  />
+  <button (click)="populateColorGrid()">Draw !</button>
+</div>
+<canvas #canvas width="400" height="400"></canvas>
